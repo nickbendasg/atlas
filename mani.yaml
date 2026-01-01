@@ -2,13 +2,13 @@ version: 1
 
 projects:
   persona-site:
-    path: ../projects/persona-site
+    path: ../persona-site
     url: git@github.com:nickbendasg/persona.git
     desc: Personal landing page
     tags: [personal, web]
 
   damico-personal:
-    path: ../projects/damico
+    path: ../damico
     url: git@github.com:nickbendasg/damico.git
     desc: Personal experiments for D'Amico workstreams
     tags: [personal, damico]

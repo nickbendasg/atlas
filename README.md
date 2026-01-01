@@ -1,13 +1,14 @@
 # Personal Mani Manifest (Nick)
 
-This repo defines my personal Mani manifest. I clone it to `~/dev/persona/atlas` so Anvil can sync these repos alongside the shared Beta-Techno workspace.
+This repo defines my personal Mani manifest. I clone it directly to `~/dev/atlas` so Anvil can sync these repos alongside the shared Beta-Techno workspaces.
 
 ## Layout
 
 ```
-~/dev/persona/
+~/dev/
   atlas/        # this repo (mani.yaml + README)
-  projects/     # personal repos live alongside this manifest
+  persona-site/
+  damico/
 ```
 
 ## Usage
@@ -18,10 +19,10 @@ This repo defines my personal Mani manifest. I clone it to `~/dev/persona/atlas`
    ```yaml
    mani_manifests:
      - repo_url: git@github.com:Beta-Techno/atlas.git
-       repo_path: ~/code/infra/atlas
+       repo_path: ~/org/Beta-Techno/infra/atlas
        sync_tags: [infra]
-     - repo_url: git@github.com:nickbendasg/persona.git
-       repo_path: ~/dev/persona/atlas
+     - repo_url: git@github.com:nickbendasg/atlas.git
+       repo_path: ~/dev/atlas
        sync_tags: [personal]
    ```
 4. Re-run `anvil up`—both manifests will sync automatically.
