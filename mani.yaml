@@ -1,0 +1,25 @@
+version: 1
+
+projects:
+  persona-site:
+    path: ../projects/persona-site
+    url: git@github.com:nickbendasg/persona.git
+    desc: Personal landing page
+    tags: [personal, web]
+
+  damico-personal:
+    path: ../projects/damico
+    url: git@github.com:nickbendasg/damico.git
+    desc: Personal experiments for D'Amico workstreams
+    tags: [personal, damico]
+
+commands:
+  status:
+    desc: Show repo status in personal workspace
+    cmd: git status -sb
+
+  pull:
+    desc: Fast-forward all personal repos
+    cmd: |
+      git fetch --all --prune
+      git pull --ff-only || true
